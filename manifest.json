@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "GitLabPasteInComment",
+  "version": "1.0",
+  "description": "Add a 'Paste' action to update the comment in GitLab with the contents of the clipboard",
+
+  "permissions": [
+    "clipboardRead"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.gitlab.com/*"
+      ],
+
+      "js": [
+        "pastecomment.js"
+      ]
+    }
+  ]
+}
