@@ -33,6 +33,7 @@ document.body.addEventListener("focus", event => {
     let li = document.createElement("li");
     li.classList.add("md-header-toolbar");
     li.style.display = "block";
+    li.style.visibility = "visible";
 
     preview.
       closest("ul").
