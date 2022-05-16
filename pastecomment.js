@@ -16,7 +16,7 @@ document.body.addEventListener("focus", event => {
 
     form.dataset["__webextPasteAndReplace"] = true;
 
-    form.querySelectorAll("button").forEach(button => {
+    form.querySelectorAll("a, button").forEach(button => {
       switch(button.textContent.trim()) {
         case "Write":
           write = button;
